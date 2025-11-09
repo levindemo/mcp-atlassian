@@ -24,8 +24,10 @@ pip install -r requirements.txt
 source .venv/Scripts/activate &&\
 python setup.py install
 
-
+source .env
+export MCP_VERY_VERBOSE=TRUE
+export  MCP_LOGGING_STDOUT=TRUE
 source .venv/Scripts/activate &&\
 cd $APP_DIR &&\
-python ./src/mcp_atlassian/__init__.py
+python ./src/mcp_atlassian/__init__.py --transport streamable-http --port 9000
 
