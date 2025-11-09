@@ -24,9 +24,9 @@ from mcp_atlassian.utils.io import is_read_only_mode
 from mcp_atlassian.utils.logging import mask_sensitive
 from mcp_atlassian.utils.tools import get_enabled_tools, should_include_tool
 
-from .confluence import confluence_mcp
-from .context import MainAppContext
-from .jira import jira_mcp
+from mcp_atlassian.confluence import confluence_mcp
+from mcp_atlassian.context import MainAppContext
+from mcp_atlassian.jira import jira_mcp
 
 logger = logging.getLogger("mcp-atlassian.server.main")
 
